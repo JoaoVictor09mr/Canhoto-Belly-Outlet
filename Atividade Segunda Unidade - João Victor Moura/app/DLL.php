@@ -1,6 +1,5 @@
 <?php
 
-// Verifica se o usuário está logado.
 function teste_login($sessao)
 {
     if ($sessao != "ok") {
@@ -9,7 +8,6 @@ function teste_login($sessao)
     }
 }
 
-// Abre a conexão, executa a consulta e retorna o resultado.
 function banco($server, $user, $password, $db, $consulta)
 {
     $banco = new mysqli($server, $user, $password, $db);
