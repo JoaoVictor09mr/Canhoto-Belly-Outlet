@@ -27,7 +27,7 @@ function banco($server, $user, $password, $db, $consulta)
     return $resultado;
 }
 
-// Escapa valores antes de colocá-los em consultas SQL.
+
 function limpar($valor)
 {
     return addslashes(trim($valor));
