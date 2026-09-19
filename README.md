@@ -23,7 +23,7 @@ Tudo Do Nosso Site <3
 . Restrição de compra para usuários não autenticados, direcionando o cliente ao login antes de prosseguir com o pedido
 
 //Estrutura De Banco De Dados em SQL
-C## 🗄️ Banco de Dados
+
 O banco de dados utilizado no projeto foi desenvolvido em MySQL.
 📄 [Visualizar código do banco de dados](jv.sql)
 
