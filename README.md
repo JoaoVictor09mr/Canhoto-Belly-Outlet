@@ -7,10 +7,17 @@ A Loja Belly & JV foi desenvolvida como um projeto acadêmico com o objetivo de 
 Tudo Do Nosso Site <3
 
 . Visualização dos produtos disponíveis na loja e seus respectivos preços
+
 . Sistema de cadastro dividido em duas etapas, com informações pessoais e criação de login e senha
+
 . Área de login, permitindo a autenticação dos usuários cadastrados
+
 . Carrinho de compras, onde é possível adicionar e retirar produtos e acompanhar o preço da compra
+
 . Processo de finalização, com seleção da forma de pagamento e confirmação do pedido
+
 . Armazenamento das vendas realizadas diretamente no banco de dados MySQL
+
 . Uso de sessões para manter as informações do usuário e do carrinho durante a navegação
+
 . Restrição de compra para usuários não autenticados, direcionando o cliente ao login antes de prosseguir com o pedido
