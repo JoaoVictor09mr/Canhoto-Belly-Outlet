@@ -57,4 +57,9 @@ CREATE TABLE vendas (
     Valor DECIMAL(10,2) NOT NULL
 );
 ```
+MAPA CONCEITUAL // BANCO DE DADOS
 <img width="1137" height="642" alt="Image" src="https://github.com/user-attachments/assets/f0339367-52b1-4f8c-bb31-f1eb2bae1bb0" />
+
+
+MAPA FISICO // BANCO DE DADOS
+<img width="1145" height="641" alt="Image" src="https://github.com/user-attachments/assets/d8d11e80-1a52-40b2-b030-856790f78b1a" />
