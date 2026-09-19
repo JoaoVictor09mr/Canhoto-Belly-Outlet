@@ -57,4 +57,4 @@ CREATE TABLE vendas (
     Valor DECIMAL(10,2) NOT NULL
 );
 ```
-
+<img width="1137" height="642" alt="Image" src="https://github.com/user-attachments/assets/f0339367-52b1-4f8c-bb31-f1eb2bae1bb0" />
