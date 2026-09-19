@@ -21,3 +21,31 @@ Tudo Do Nosso Site <3
 . Uso de sessões para manter as informações do usuário e do carrinho durante a navegação
 
 . Restrição de compra para usuários não autenticados, direcionando o cliente ao login antes de prosseguir com o pedido
+
+//Estrutura De Banco De Dados em SQL
+
+CREATE DATABASE jv;
+
+USE jv;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(20) NOT NULL UNIQUE,
+    endereco VARCHAR(150) NOT NULL,
+    bairro VARCHAR(100) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    cep VARCHAR(20) NOT NULL,
+    login VARCHAR(100) UNIQUE,
+    senha VARCHAR(255)
+);
+
+CREATE TABLE vendas (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    NumeroVenda VARCHAR(30) NOT NULL,
+    Usuario VARCHAR(100) NOT NULL,
+    DataHora DATETIME NOT NULL,
+    Produto VARCHAR(150) NOT NULL,
+    Valor DECIMAL(10,2) NOT NULL
+);
