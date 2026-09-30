@@ -32,9 +32,9 @@ Aqui O Script Para A Criação Do Banco no PHP My Admin.
 ### Código SQL
 
 ```sql
-CREATE DATABASE Loja;
+CREATE DATABASE jv;
 
-USE Loja;
+USE jv;
 
 CREATE TABLE Carrinho (
     ID_Carrinho INT PRIMARY KEY,
