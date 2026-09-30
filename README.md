@@ -32,29 +32,54 @@ Aqui O Script Para A Criação Do Banco no PHP My Admin.
 ### Código SQL
 
 ```sql
-CREATE DATABASE jv;
-USE jv;
+CREATE DATABASE Loja;
 
-CREATE TABLE usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    cpf VARCHAR(20) NOT NULL UNIQUE,
-    endereco VARCHAR(150) NOT NULL,
-    bairro VARCHAR(100) NOT NULL,
-    cidade VARCHAR(100) NOT NULL,
-    estado VARCHAR(50) NOT NULL,
-    cep VARCHAR(20) NOT NULL,
-    login VARCHAR(100) UNIQUE,
-    senha VARCHAR(255)
+USE Loja;
+
+CREATE TABLE Carrinho (
+    ID_Carrinho INT PRIMARY KEY,
+    Nome_Produto VARCHAR(100),
+    Valor_Produto DECIMAL(10,2)
 );
 
-CREATE TABLE vendas (
-    Id INT AUTO_INCREMENT PRIMARY KEY,
-    NumeroVenda VARCHAR(30) NOT NULL,
-    Usuario VARCHAR(100) NOT NULL,
-    DataHora VARCHAR(30) NOT NULL,
-    Produto VARCHAR(100) NOT NULL,
-    Valor DECIMAL(10,2) NOT NULL
+CREATE TABLE Produtos (
+    ID_Produtos INT PRIMARY KEY,
+    Nome_Produto VARCHAR(100),
+    Valor DECIMAL(10,2),
+    Foto_Produto VARCHAR(255),
+    Descricao_Produto VARCHAR(255),
+    FK_Carrinho_ID_Carrinho INT,
+    FOREIGN KEY (FK_Carrinho_ID_Carrinho)
+        REFERENCES Carrinho(ID_Carrinho)
+);
+
+CREATE TABLE Venda (
+    ID_Venda INT PRIMARY KEY,
+    NumeroVenda INT,
+    Usuario VARCHAR(100),
+    Produto VARCHAR(100),
+    DataHora DATETIME,
+    Valor DECIMAL(10,2),
+    Forma_Pagamento VARCHAR(50),
+    FK_Produtos_ID_Produtos INT,
+    FOREIGN KEY (FK_Produtos_ID_Produtos)
+        REFERENCES Produtos(ID_Produtos)
+);
+
+CREATE TABLE Usuario (
+    ID_Usuario INT PRIMARY KEY,
+    Nome VARCHAR(100),
+    CPF VARCHAR(14),
+    Endereco VARCHAR(150),
+    Bairro VARCHAR(100),
+    Cidade VARCHAR(100),
+    Estado VARCHAR(50),
+    CEP VARCHAR(10),
+    Login VARCHAR(50),
+    Senha VARCHAR(100),
+    FK_Venda_ID_Venda INT,
+    FOREIGN KEY (FK_Venda_ID_Venda)
+        REFERENCES Venda(ID_Venda)
 );
 ```
 MAPA CONCEITUAL // BANCO DE DADOS
