@@ -19,8 +19,6 @@ Tudo Do Nosso Site <3
 
 . Armazenamento das vendas realizadas diretamente no banco de dados MySQL
 
-. Uso de sessões para manter as informações do usuário e do carrinho durante a navegação
-
 . Restrição de compra para usuários não autenticados, direcionando o cliente ao login antes de prosseguir com o pedido
 
 //Estrutura De Banco De Dados em SQL
