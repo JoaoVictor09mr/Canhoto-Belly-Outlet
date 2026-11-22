@@ -1,3 +1,4 @@
+
 Loja Belly & JV
 
 A Loja Canhoto & Belly nasceu com a proposta de unir beleza, praticidade e tecnologia em um único espaço. Criada como um projeto de desenvolvimento web, a loja foi pensada para proporcionar aos clientes uma experiência de compra simples, organizada e agradável, desde o cadastro até a escolha dos produtos e a finalização da compra.
@@ -12,7 +13,7 @@ Tudo Do Nosso Site <3
 
 . Área de login, permitindo a autenticação dos usuários cadastrados
 
-. Carrinho de compras, onde é possível adicionar e retirar produtos e acompanhar o preço da compra
+. Carrinho de compras, onde é possível adicionar e retirar produtos
 
 . Processo de finalização, com seleção da forma de pagamento e confirmação do pedido
 
@@ -88,3 +89,18 @@ MAPA CONCEITUAL // BANCO DE DADOS
 
 MAPA LÓGICO // BANCO DE DADOS
 <img width="1145" height="641" alt="Image" src="https://github.com/user-attachments/assets/d8d11e80-1a52-40b2-b030-856790f78b1a" />
+
+
+
+ATENÇÃO, para funcionar corretamente, precisa criar uma pasta no XAMPP, não no htdocs, com o nome de config e adicionar o smtp.php
+
+### CODIGO PHP
+Codigo do SMTP:
+<?php
+
+return array(
+    'usuario' => 'jvmr527@gmail.com',
+    'senha' => 'jziu rrwr smoc tddw'
+);
+
+
